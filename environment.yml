@@ -1,0 +1,102 @@
+name: epi_hd
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+
+dependencies:
+  # ── Core Python ────────────────────────────────────────────────────────────
+  - python=3.11
+  - pip
+
+  # ── Scientific stack ───────────────────────────────────────────────────────
+  - numpy>=1.26
+  - scipy>=1.13
+  - pandas>=2.2
+  - matplotlib>=3.8
+  - seaborn>=0.13
+  - plotly>=5.24
+  - scikit-learn>=1.5
+  - statsmodels>=0.14
+  - numba>=0.60
+  - joblib>=1.4
+  - patsy>=1.0
+
+  # ── Bioinformatics tools ───────────────────────────────────────────────────
+  - samtools>=1.20
+  - bowtie2>=2.5
+  - bedtools>=2.31
+  - htslib>=1.20
+  - pysam>=0.22
+  - deeptools>=3.5
+  - fastqc>=0.12
+  - trim-galore>=0.6
+  - trimmomatic>=0.40
+  - cutadapt>=4.0
+  - bbmap>=39.0
+  - macs3>=3.0
+  - multiqc>=1.24
+  - snakemake-minimal>=7.32
+  - perl
+
+  # ── Genomics Python ────────────────────────────────────────────────────────
+  - biopython>=1.84
+  - pybigwig>=0.3
+  - py2bit>=0.3
+  - pyfaidx>=0.8
+  - pyvcf3>=1.0
+  - ucsc-bedgraphtobigwig
+  - ucsc-genepredtobed
+  - ucsc-gtftogenepred
+  - ucsc-liftover
+
+  # ── Single-cell / embedding ────────────────────────────────────────────────
+  - scanpy>=1.10
+  - anndata>=0.10
+  - umap-learn>=0.5
+  - pynndescent>=0.5
+  - hmmlearn>=0.3
+
+  # ── Data formats ──────────────────────────────────────────────────────────
+  - h5py>=3.10
+  - zarr>=2.18
+  - numcodecs>=0.12
+  - openpyxl>=3.1
+  - polars-lts-cpu>=1.0
+
+  # ── Jupyter ────────────────────────────────────────────────────────────────
+  - ipykernel>=6.29
+  - ipython>=8.0
+
+  # ── Visualization extras ───────────────────────────────────────────────────
+  - python-kaleido>=0.2
+  - kaleido-core>=0.2
+
+  # ── Workflow & utilities ───────────────────────────────────────────────────
+  - gitpython>=3.1
+  - tqdm>=4.66
+  - rich>=13.0
+  - click>=8.1
+  - pyyaml>=6.0
+  - requests>=2.31
+  - networkx>=3.3
+  - smart_open>=6.0
+  - tabulate>=0.9
+  - natsort>=8.4
+
+  # ── Solver (snakemake dependency) ─────────────────────────────────────────
+  - pulp>=2.7
+  - coin-or-cbc
+
+  # ── Data science extras ────────────────────────────────────────────────────
+  - threadpoolctl>=3.0
+  - narwhals>=2.0
+
+  # ── pip-only packages ──────────────────────────────────────────────────────
+  - pip:
+      - jupyterlab>=4.0
+      - notebook>=7.0
+      - jupyter>=1.1
+      - ipywidgets>=8.0
+      - jupyterlab-widgets>=3.0
+      - widgetsnbextension>=4.0

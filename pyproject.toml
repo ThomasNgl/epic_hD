@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "epi_hd"
+version = "0.1.0"
+description = "Epigenomics analysis utilities — methylation, transcriptomics, metabolomics"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [
+    {name = "Thomas Negrello", email = "negrello@hifo.uzh.ch"}
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"*" = ["*.yaml", "*.yml", "*.json"]

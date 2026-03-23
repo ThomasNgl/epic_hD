@@ -1,0 +1,4 @@
+fasta_file_path = 
+chr_name_list = []
+indexed_bam_folderpath = 
+project_folder_path = 
