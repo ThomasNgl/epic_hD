@@ -1,0 +1,37 @@
+local_root : "~/Desktop/matriline" # To adapt
+
+env_dir : "../envs"
+
+project_root: "../../epic_matriline_analysis"
+analysis_dir: ../../epic_matriline_analysis
+
+genome_name: "GRCm39"
+ucsc_genome_fa: "mm39.fa"
+genome_fai: "mm39.fa.fai"
+bismark_genome_name: "bismark_genome"
+
+bisulfite_conversion_name : "Bisulfite_Genome"
+ct_conv_name: "CT_conversion"
+ga_conv_name: "GA_conversion"
+
+gencode_name : "gencode_primary"
+decoys_txt : "decoys.txt"
+gencode_genome_fa: "GRCm39.primary_assembly.genome.fa"
+transcripts_fa: "gencode.vM37.transcripts.fa"
+annotation_gtf: "gencode.vM37.primary_assembly.annotation.gtf"
+gentrome_fa: "gentrome.fa"
+
+star_name : "star_genome_125"
+
+salmon_name: "salmon_genome"
+
+chr_names_file: "chr_names.txt"
+
+# Params General
+threads: 2
+
+# Params ac
+density_window: 1000
+
+# Params bb
+overhang: 125
