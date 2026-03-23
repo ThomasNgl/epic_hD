@@ -1,4 +1,4 @@
-name: epi_hd
+name: epic_hd
 channels:
   - conda-forge
   - bioconda
