@@ -3,7 +3,9 @@ library(ensembldb)
 
 # ===== GENE ID CONVERSION =====
 
-convertGeneNames <- function(ids, gene_map, strip_version = TRUE) {
+convertGeneNames <- function(ids, 
+                            gene_map = "", 
+                            strip_version = TRUE) {
   
   # Accept either a file path or a loaded gene_map object
   if (is.character(gene_map) && length(gene_map) == 1 && file.exists(gene_map)) {
