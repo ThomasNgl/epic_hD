@@ -72,5 +72,4 @@ rowData(se_gene)$gene_biotype  <- gene_info_df$gene_biotype[idx]
 rowData(se_gene)$chromosome    <- gene_info_df$seq_name[idx]
 rowData(se_gene)$gene_start    <- gene_info_df$gene_seq_start[idx]
 rowData(se_gene)$gene_end      <- gene_info_df$gene_seq_end[idx]
-  cache = "/mnt/auxiliary/.cache/R/AnnotationHub"
 
