@@ -1,4 +1,4 @@
-name: epic_hd
+name: epic_hd_env
 channels:
   - conda-forge
   - bioconda
@@ -126,3 +126,4 @@ dependencies:
       - ipywidgets>=8.0
       - jupyterlab-widgets>=3.0
       - widgetsnbextension>=4.0
+      - -e .
