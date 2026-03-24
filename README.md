@@ -83,6 +83,9 @@ bash 01_build_annotation.sh
 # BED12 transcript structures (for RSeQC, deeptools)
 bash 02_build_bed12.sh
 
+# Genomic annotation BEDs (gene structure, CpG context, repeats, cCREs)
+bash 03_build_genomic_annotations.sh
+
 # Salmon: decoys + gentrome
 bash 10_prepare_salmon_inputs.sh
 
